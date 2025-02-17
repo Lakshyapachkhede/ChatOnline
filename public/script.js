@@ -80,7 +80,8 @@ function addMessage(name, message, direction) {
 
 
 
-const socket = io();;
+const socket = io();
+
 document.getElementById("name-form").addEventListener("submit", (event) => {
     event.preventDefault();
     if (name === "") {
