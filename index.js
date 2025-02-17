@@ -1,7 +1,9 @@
 const express = require("express");
 const http = require('http');
 const {Server} = require("socket.io");
-const {getIPAddress} = require("./utils");
+require('dotenv').config();
+
+
 
 const app = express();
 const server = http.createServer(app);
@@ -46,10 +48,9 @@ io.on("connection", (socket)=>{
 
 
 
-PORT = 8000;
-IP = "0.0.0.0";
+const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, IP, ()=>{
-    console.log(`Server running at ${IP}:${PORT}`)
+server.listen(PORT, ()=>{
+    console.log(`Server running at ${PORT}`)
 })
 
