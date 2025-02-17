@@ -32,7 +32,8 @@ io.on("connection", (socket)=>{
     })
 
     socket.on("message", (message)=>{
-        socket.broadcast.emit("message", {name: users[socket.id], message: message});
+        if (users[socket.id] != undefined)
+            socket.broadcast.emit("message", {name: users[socket.id], message: message});
     })
 
     socket.on("disconnect", () => {
