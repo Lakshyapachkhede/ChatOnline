@@ -100,7 +100,7 @@ document.getElementById("name-form").addEventListener("submit", (event) => {
 
 document.getElementById('message-form').addEventListener('submit', (event) => {
     event.preventDefault();
-    if (name === "") {
+    if (name === "" || name === undefined) {
         alert("Join first!");
 
     } else {
