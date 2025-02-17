@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Chat Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="nav">
+        <div>
+            <img src="logo.png" alt="logo">
+            <p>Chat Online</p>
+        </div>
+
+        <div>
+            <img src="online.png" alt="online image">
+            <p id="count">0</p>
+        </div>
+
+        <div class="input-name">
+            <form id="name-form">
+                <input type="text" id="user-name" maxlength="10" placeholder=" enter your name">
+                <button type="submit">Join</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div class="container" id="container">
+        <!-- <div class="message left">
+            <div class="name blue">
+                <p>Lakshya</p>
+                <p class="time">9:32 am</p>
+
+            </div>
+            <div class="content">
+                Hello How are you
+            </div>
+        </div> -->
+
+        <!-- <div class="info">
+            <b>Rohan Lodhi</b> joined the chat
+        </div>  -->
+
+        <!-- <div class="message right">
+            <div class="name yellow">
+                <p>Lakshya</p>
+                <p class="time">9:32 am</p>
+            </div>
+            <div class="content">
+                Hello How are you
+            </div>
+        </div> -->
+
+    </div>
+
+    <div class="input-message">
+        <form id="message-form">
+            <input type="text" placeholder="Message" id="message" required>
+            <button type="submit">Send</button>
+
+        </form>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

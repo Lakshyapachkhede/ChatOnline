@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+
+}
+
+.nav {
+    padding: 10px;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav img {
+    width: 50px;
+    margin-right: 5px;
+}
+
+.nav p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav div {
+    display: flex;
+    align-items: center;
+}
+
+.input-name input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 8px;
+    width: 150px;
+    font-size: 14px;
+}
+
+.input-name button {
+    padding: 9px 15px;
+    background-color: rgb(41, 123, 252);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    border: 2px solid black;
+    min-height: 60vh;
+    max-height: 70vh;
+    margin: 20px auto;
+    border-radius: 5px;
+    overflow-y: auto;
+    background: #efefef;
+    padding: 15px;
+}
+
+.message {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: white;
+    margin-bottom: 10px;
+    min-width: 40%;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+.left {
+    float: left;
+    clear: both;
+
+}
+
+.right {
+    float: right;
+    clear: both;
+    text-align: right;
+    background-color: #dcf8c6;
+}
+
+.message .name {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+}
+
+.message .time {
+    color: #757575;
+}
+
+.yellow {
+    color: rgb(255, 194, 72);
+}
+
+.blue {
+    color: rgb(41, 123, 252);
+
+}
+
+.green {
+    color: rgb(94, 207, 156);
+}
+
+.whatsapp-dark-green {
+color: rgb(7, 94, 84); /* Dark Green */
+}
+
+.whatsapp-light-green {
+color: rgb(37, 211, 102); /* Light Green */
+}
+
+.whatsapp-gray {
+color: rgb(236, 229, 221); /* Gray */
+}
+
+.whatsapp-message-bubble {
+color: rgb(220, 248, 198); /* Message Bubble */
+}
+
+.whatsapp-darker-green {
+color: rgb(18, 140, 126); /* Darker Green for Contact Name */
+}
+
+
+
+.info {
+    clear: both;
+    text-align: center;
+    margin: 10px auto;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.input-message {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+
+}
+
+.input-message form {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.input-message input {
+    width: 100%;
+    max-width: 90%;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.input-message button {
+    padding: 12.5px 15px;
+    background-color: rgb(41, 123, 252);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+}
+
+.read-more {
+    background: none;
+    border: none;
+    color: blue;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 5px;
+    text-decoration: underline;
+}
+
+
+
+@media only screen and (max-width:500px) {
+    .nav { 
+        flex-wrap: wrap;        
+    }
+    
+
+    .nav form {
+        margin-top: 5px;
+    }
+
+    .container {
+        max-height: 70vh;
+    }
+
+    
+}
