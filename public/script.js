@@ -30,6 +30,10 @@ function addMessage(name, message, direction) {
 
     const nameDiv = document.createElement("div");
     const nameP = document.createElement("p");
+
+    if (name.length > 10)
+        name = name.slice(0,10) + "..."
+
     nameP.innerText = name;
 
     const timeP = document.createElement("p");
