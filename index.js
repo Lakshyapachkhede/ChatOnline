@@ -23,6 +23,7 @@ usersOnline = 0;
 io.on("connection", (socket)=>{
     
     io.emit("user-count", usersOnline);
+    console.log("new user connect")
 
     socket.on("new-user-join", (name)=>{
         users[socket.id] = name;
@@ -51,7 +52,7 @@ io.on("connection", (socket)=>{
 
 const PORT = process.env.PORT || 3000;
 
-server.listen(PORT, ()=>{
+server.listen(PORT, "192.168.79.37",()=>{
     console.log(`Server running at ${PORT}`)
 })
 
